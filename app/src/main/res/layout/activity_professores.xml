@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <!-- Campos de entrada -->
+    <EditText
+        android:id="@+id/editCpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CPF" />
+
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome" />
+
+    <!-- Botões -->
+
+    <Button
+        android:id="@+id/btnCadastrarProfessor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:onClick="cadastrarProfessor"
+        android:text="Cadastrar" />
+
+    <Button
+        android:id="@+id/btnListarProfessores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:onClick="listarProfessores"
+        android:text="Listar" />
+
+    <Button
+        android:id="@+id/btnAtualizarProfessor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atualizar"
+        android:backgroundTint="#000000"
+        android:onClick="atualizarProfessor" />
+
+    <Button
+        android:id="@+id/btnDeletarProfessor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deletar"
+        android:backgroundTint="#000000"
+        android:onClick="deletarProfessor" />
+
+    <!-- Lista de professores -->
+    <ListView
+        android:id="@+id/listViewProfessores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

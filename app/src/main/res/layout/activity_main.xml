@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/btnProfessores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Professores"
+        android:backgroundTint="#000000"
+        android:onClick="abrirProfessoresActivity" />
+
+    <Button
+        android:id="@+id/btnDisciplinas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disciplinas"
+        android:backgroundTint="#000000"
+        android:onClick="abrirDisciplinasActivity" />
+
+    <Button
+        android:id="@+id/btnEmprestimos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empréstimos"
+        android:backgroundTint="#000000"
+        android:onClick="abrirEmprestimosActivity" />
+
+</LinearLayout>

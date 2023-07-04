@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <!-- Campos de entrada -->
+    <EditText
+        android:id="@+id/editCodigoDisciplina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Código da Disciplina" />
+
+    <EditText
+        android:id="@+id/editLocal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Local" />
+
+    <EditText
+        android:id="@+id/editCpfProfessorDisciplina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CPF do Professor" />
+
+    <EditText
+        android:id="@+id/editNomeProfessorDisciplina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Professor" />
+
+    <!-- Botões -->
+    <Button
+        android:id="@+id/btnCadastrarDisciplina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        android:backgroundTint="#000000"
+        android:layout_marginVertical="5px"
+    android:onClick="cadastrarDisciplina" />
+
+    <Button
+        android:id="@+id/btnListarDisciplinas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listar"
+        android:backgroundTint="#000000"
+        android:layout_marginVertical="5px"
+    android:onClick="listarDisciplinas" />
+
+    <Button
+        android:id="@+id/btnAtualizarDisciplina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atualizar"
+        android:backgroundTint="#000000"
+        android:layout_marginVertical="5px"
+    android:onClick="atualizarDisciplina" />
+
+    <Button
+        android:id="@+id/btnDeletarDisciplina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deletar"
+        android:backgroundTint="#000000"
+        android:layout_marginVertical="5px"
+    android:onClick="deletarDisciplina" />
+
+    <!-- Lista de disciplinas -->
+    <ListView
+        android:id="@+id/listViewDisciplinas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

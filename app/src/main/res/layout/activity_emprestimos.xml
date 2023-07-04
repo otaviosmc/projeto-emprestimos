@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <!-- Campos de entrada -->
+    <EditText
+        android:id="@+id/editCodigoEmprestimo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Código do Empréstimo" />
+
+    <EditText
+        android:id="@+id/editCpfProfessorEmprestimo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CPF do Professor" />
+
+    <EditText
+        android:id="@+id/editNomeProfessorEmprestimo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Professor" />
+
+    <EditText
+        android:id="@+id/editHorarioPegouChave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Horário que pegou a chave" />
+
+    <EditText
+        android:id="@+id/editHorarioDevolucaoChave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Horário da devolução da chave" />
+
+    <!-- Botões -->
+    <Button
+        android:id="@+id/btnCadastrarEmprestimo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        android:backgroundTint="#000000"
+        android:onClick="cadastrarEmprestimo" />
+
+    <Button
+        android:id="@+id/btnListarEmprestimos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listar"
+        android:backgroundTint="#000000"
+        android:onClick="listarEmprestimos" />
+
+    <Button
+        android:id="@+id/btnAtualizarEmprestimo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atualizar"
+        android:backgroundTint="#000000"
+        android:onClick="atualizarEmprestimo" />
+
+    <Button
+        android:id="@+id/btnDeletarEmprestimo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deletar"
+        android:backgroundTint="#000000"
+        android:onClick="deletarEmprestimo" />
+
+    <!-- Lista de empréstimos de chaves -->
+    <ListView
+        android:id="@+id/listViewEmprestimos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
